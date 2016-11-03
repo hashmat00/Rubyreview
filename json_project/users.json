@@ -1,0 +1,2 @@
+{"email":"hashmat00@aol.com","name":"hashmat","permissions":{"accounts":"read","policies":"write","users":"write"}}
+{:email=>"john@aol.com", :name=>"john", :permissions=>{:accounts=>"read", :policies=>"write", :users=>"write"}}

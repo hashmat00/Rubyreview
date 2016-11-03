@@ -49,4 +49,4 @@ num = {a: 1, b: 3, c: 4, d: 5, e: 6}
 # num.each {|k, v| puts "Key is #{k}:  #{v}" }
 
 
-num.each {|k, v| p num.delete(k) if v > 4 }
+num.each {|k, v|  num.delete(k) if v > 4 }
