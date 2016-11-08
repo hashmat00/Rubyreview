@@ -2,13 +2,11 @@
 
 <% if @article.errors.any? %>
  <h2>The following erros occured</h2>
-<ul>
-    <%= @article.errors.full_messages.each do |msg| %>
-    <li>
-       <%= msg %>
-    </li>
-    <% end %>
-</ul>
+    <ul>
+        <%= @article.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+    </ul>
 
 <% end %>
 
@@ -33,3 +31,8 @@
 
 
 <% end %>
+
+
+  <p>
+    <%= link_to 'Back to Article', articles_path %>
+  </p>
