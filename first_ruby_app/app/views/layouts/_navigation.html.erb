@@ -29,8 +29,7 @@
   <ul class="nav navbar-nav">
   
     <li><%= link_to "Articles", articles_path %></li>
-    
-    <li><a href="#">Link</a></li>
+  
     
     <li class="dropdown">
     
@@ -72,7 +71,8 @@
 
 <ul class="nav navbar-nav navbar-right">
 
-  <li><a href="#">Link</a></li>
+  <li><%= link_to 'login', login_path %></li>
+  <li><%= link_to 'Logout', logout_path, method: :delete %></li>
   
   <li class="dropdown">
   
