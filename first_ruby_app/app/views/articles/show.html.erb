@@ -23,6 +23,10 @@
         
         <%= simple_format(@article.description) %>
         
+        <% if @article.categories.any? %>
+        <p>Categories: <%= render @article.categories %></p>
+        <% end %>
+        
         <div class="article-actions">
              <p>Created: <%= @article.created_at.strftime("%d %b") %> | Edited: <%= @article.updated_at.strftime("%d %b") %> </p>
              </div> 
